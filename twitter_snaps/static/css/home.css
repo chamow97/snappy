@@ -1,0 +1,29 @@
+body{
+    color: white;
+}
+#heading, #content-text{
+    font-family: 'Bellefair', serif;
+    text-align: center;
+}
+#heading{
+    font-size: 40px;
+}
+#heading1{
+    font-size: 30px;
+}
+#content-text{
+    font-size: 20px;
+}
+.controls{
+    text-align: center;
+}
+.control-btn{
+    background-color: #000000;
+}
+.reg-form{
+    background-color: #9acfea;
+    color: #000000;
+    margin-top: 7%;
+    text-align: center;
+    border-radius: 5%;
+}

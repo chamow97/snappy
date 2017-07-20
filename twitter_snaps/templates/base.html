@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{% static 'images/icon.png' %}" type="img/png">
+    <title>Snappy!</title>
+{#    Fonts#}
+    <link href="{% static 'fonts/Bellefair-Regular.ttf' %}">
+
+{#        Bootstrap CSS#}
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}">
+
+{#    jQuery#}
+    <script type="text/javascript" src="{% static 'plugins/jquery.js' %}"></script>
+{#    Bootstrap JS#}
+    <script type="text/javascript" src="{% static 'plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+{#    local CSS#}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{#    toastr#}
+     <script type="text/javascript" src="{% static 'plugins/toastr.js' %}" > </script>
+
+</head>
+<body style="background-image: url('{% static 'images/back.jpg' %}'); background-repeat: no-repeat";>
+<div class="container-fluid">
+<div class="row">
+    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-2">
+    </div>
+    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-8" id = "heading">
+        Snappy!
+    </div>
+    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-2">
+    </div>
+</div>
+    <br><br>
+<div class="row">
+    <div class="col col-md-3"></div>
+    <div class="col col-md-6" id="content-text">
+        A tool to display images with #tag as a Gallery!
+    </div>
+</div>
+    <br><br><br>
+<div class="row controls">
+    <div class="col col-md-2 col-xs-0"></div>
+    <div class="col col-md-8 col-xs-12">
+        <button class="btn btn-primary control-btn btn-lg">Home</button>
+        &nbsp;
+        <button class="btn btn-success control-btn btn-lg">Register</button>
+        &nbsp;
+        <button class="btn btn-primary control-btn btn-lg">Twitter Snaps</button>
+        &nbsp;
+        <button class="btn btn-success control-btn btn-lg">Insta Snaps</button>
+
+    </div>
+</div>
+</div>
+{% block content %}
+{% endblock %}
+</body>
+</html>
