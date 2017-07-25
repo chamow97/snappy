@@ -18,18 +18,24 @@
 {#    local CSS#}
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
 {#    toastr#}
-     <script type="text/javascript" src="{% static 'plugins/toastr.js' %}" > </script>
-
+    <script type="text/javascript" src="{% static 'plugins/toastr/build/toastr.min.js' %}" > </script>
+    <link rel="stylesheet" href="{% static 'plugins/toastr/build/toastr.css' %}">
 </head>
 <body style="background-image: url('{% static 'images/back.jpg' %}'); background-repeat: no-repeat";>
 <div class="container-fluid">
 <div class="row">
     <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-2">
     </div>
-    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-8" id = "heading">
+    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-6" id = "heading">
         Snappy!
     </div>
-    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-2">
+    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-4">
+        {% if request.user.is_active %}
+            <script>
+            toastr.success('Welcome back {{ user.username }}');
+            </script>
+            <a type="submit" href="../logout_user" class="btn btn-success logout">Logout</a>
+        {% endif %}
     </div>
 </div>
     <br><br>
@@ -45,7 +51,7 @@
     <div class="col col-md-8 col-xs-12">
         <button class="btn btn-primary control-btn btn-lg">Home</button>
         &nbsp;
-        <button class="btn btn-success control-btn btn-lg">Register</button>
+        <a href="{% block register_link %}{% endblock %}"><button class="btn btn-success control-btn btn-lg">Register</button></a>
         &nbsp;
         <button class="btn btn-primary control-btn btn-lg">Twitter Snaps</button>
         &nbsp;

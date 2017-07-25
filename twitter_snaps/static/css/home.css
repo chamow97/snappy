@@ -6,7 +6,7 @@ body{
     text-align: center;
 }
 #heading{
-    font-size: 40px;
+    font-size: 300%;
 }
 #heading1{
     font-size: 30px;
@@ -26,4 +26,30 @@ body{
     margin-top: 7%;
     text-align: center;
     border-radius: 5%;
+}
+.navigation{
+    font-size: larger;
+    color: orangered;
+
+}
+.nav-pills{
+    border-radius: 5%;
+    background-color: transparent;
+}
+.nav-pills li{
+    border: 1px solid black;
+    border-radius: 5%;
+}
+.logout{
+    float: right;
+    margin-top: 3%;
+    background-color: #c9302c;
+}
+a:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+a{
+    color: #ffffff;
 }
