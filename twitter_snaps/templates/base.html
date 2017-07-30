@@ -3,12 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{% static 'images/icon.png' %}" type="img/png">
     <title>Snappy!</title>
 {#    Fonts#}
     <link href="{% static 'fonts/Bellefair-Regular.ttf' %}">
-
-{#        Bootstrap CSS#}
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    {#        Bootstrap CSS#}
     <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}">
 
 {#    jQuery#}
@@ -21,44 +22,48 @@
     <script type="text/javascript" src="{% static 'plugins/toastr/build/toastr.min.js' %}" > </script>
     <link rel="stylesheet" href="{% static 'plugins/toastr/build/toastr.css' %}">
 </head>
-<body style="background-image: url('{% static 'images/back.jpg' %}'); background-repeat: no-repeat";>
-<div class="container-fluid">
-<div class="row">
-    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-2">
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid nav-content">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Snappy</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navBar">
+            <ul class="nav navbar-nav" id="hello">
+               <li><button class="btn btn-default nav-button"><a href="#">Register</a></button></li>
+               <li><button class="btn btn-default nav-button login-btn"><a href="#">Login</a></button></li>
+               <li><button class="btn btn-default nav-button logout-btn"><a href="#">Logout</a></button></li>
+            </ul>
+        </div>
     </div>
-    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-6" id = "heading">
+</nav>
+<div class="row">
+    <div class="col-md-offset-0 col-sm-offset-0 col-lg-offset-0 col-xs-offset-0" id = "heading">
         Snappy!
     </div>
-    <div class="col col-md-4 col-sm-4 col-lg-4 col-xs-4">
-        {% if request.user.is_active %}
-            <script>
-            toastr.success('Welcome back {{ user.username }}');
-            </script>
-            <a type="submit" href="../logout_user" class="btn btn-success logout">Logout</a>
-        {% endif %}
-    </div>
+    {% if request.user.is_active %}
+       <script>
+           toastr.success('Welcome back {{ user.username }}');
+           $(".login-btn").hide();
+           $(".logout-btn").show();
+       </script>
+    {% else %}
+        <script>
+        $(".login-btn").show();
+        $(".logout-btn").hide();
+        </script>
+    {% endif %}
 </div>
-    <br><br>
+    <br>
 <div class="row">
-    <div class="col col-md-3"></div>
-    <div class="col col-md-6" id="content-text">
-        A tool to display images with #tag as a Gallery!
+    <div class="col-md-offset-0 col-sm-offset-0 col-xs-offset-0 col-lg-offset-0" id="content-text">
+        A tool to display images with #tag as a gallery!
     </div>
-</div>
-    <br><br><br>
-<div class="row controls">
-    <div class="col col-md-2 col-xs-0"></div>
-    <div class="col col-md-8 col-xs-12">
-        <button class="btn btn-primary control-btn btn-lg">Home</button>
-        &nbsp;
-        <a href="{% block register_link %}{% endblock %}"><button class="btn btn-success control-btn btn-lg">Register</button></a>
-        &nbsp;
-        <button class="btn btn-primary control-btn btn-lg">Twitter Snaps</button>
-        &nbsp;
-        <button class="btn btn-success control-btn btn-lg">Insta Snaps</button>
-
-    </div>
-</div>
 </div>
 {% block content %}
 {% endblock %}

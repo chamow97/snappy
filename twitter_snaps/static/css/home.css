@@ -1,31 +1,83 @@
 body{
-    color: white;
+    color: #000;
+    margin: 60px 20px 0px 20px;
 }
-#heading, #content-text{
-    font-family: 'Bellefair', serif;
-    text-align: center;
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+.nav-content{
+    margin: 0px 30px 0px 30px;
+}
+.nav-button a{
+    color: #38ff26;
+}
+.nav-button{
+    margin: 10px 10px 10px 10px;
+    border-style: solid;
+    border-color: #38ff26;
+}
+.navbar-nav{
+      float: right;
+}
+.nav-button:hover{
+    background-color: #38ff26;
+    color: #fff;
+}
+.nav-button:hover a{
+    color: #FFFFFF;
 }
 #heading{
     font-size: 300%;
-}
-#heading1{
-    font-size: 30px;
-}
-#content-text{
-    font-size: 20px;
-}
-.controls{
     text-align: center;
 }
-.control-btn{
-    background-color: #000000;
+.fields{
+    height: 30px;
+    border-radius: 8%;
+}
+#heading1{
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+}
+#content-text{
+    font-size: 16px;
+    text-align: center;
+}
+.select-btn{
+    margin: 30px 20px 0px 20px;
+    text-align: center;
+}
+.twitter-btn{
+    border-style: solid;
+    border-color: #0084b4;
+    background-color: #FFFFFF;
+    color: #0084b4;
+}
+.insta-btn{
+    border-style: solid;
+    border-color: #fb3958;
+    background-color: #ffffff;
+    color: #fb3958;
+}
+.insta-btn:hover, .insta-btn.selected{
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: #fb3958;
+    color: #ffffff;
+}
+.twitter-btn:hover, .twitter-btn.selected{
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: #0084b4;
+    color: #ffffff;
+
 }
 .reg-form{
-    background-color: #9acfea;
+    background-color: #ffc838;
     color: #000000;
     margin-top: 7%;
     text-align: center;
-    border-radius: 5%;
+    border-radius: 10%;
 }
 .navigation{
     font-size: larger;
@@ -47,9 +99,35 @@ body{
 }
 a:hover
 {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 }
 a{
-    color: #ffffff;
+    color: #000000;
 }
+.navbar-default{
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px #000000;
+}
+.active{
+    color: #000000;
+}
+.search-bar{
+    text-align: center;
+    margin-top: 20px;
+}
+#search-text{
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 5px;
+}
+.search-btn{
+
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.search-btn:hover{
+    background-color: #0084b4;
+    color: #FFFFFF;
+}
+

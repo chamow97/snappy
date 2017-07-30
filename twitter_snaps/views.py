@@ -1,12 +1,21 @@
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render
 from django.views import View
-
+from TwitterAPI import TwitterAPI
 from twitter_snaps.forms import UserForm
+
+
+consumer_key = ''
+consumer_secret_key = ''
+access_token = ''
+secret_access_token = ''
 
 
 def index(request):
     return render(request, 'index.html')
+
+def twitter_snaps(request):
+    return render(request, 'twitter_snaps.html')
 
 def login_user(request):
     if not request.user.is_authenticated():
@@ -18,7 +27,7 @@ def login_user(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return render(request, 'login_user.html')
+                    return render(request, 'index.html')
                 else:
                     return render(request, 'login_user.html',
                                   {'error_message' : 'Your account has been disabled!'})
@@ -35,7 +44,7 @@ def logout_user(request):
     context = {
         'form': form
     }
-    return render(request, 'index.html')
+    return render(request, 'login_user.html')
 
 
 
