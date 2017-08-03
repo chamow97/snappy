@@ -11,6 +11,7 @@ class UserForm(forms.ModelForm):
         widgets = {
             'username': forms.TextInput(attrs={'placeholder': 'Username'}),
             'email': forms.EmailInput(attrs={'placeholder': 'E-mail'}),
+            # 'password': forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Password'}))
             'password': forms.PasswordInput(attrs={'placeholder': 'Enter Password'})
         }
         fields = ['username', 'email', 'password']

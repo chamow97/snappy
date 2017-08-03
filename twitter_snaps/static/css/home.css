@@ -10,18 +10,15 @@ body{
     margin: 0px 30px 0px 30px;
 }
 .nav-button a{
-    color: #38ff26;
+    color: #1ABE00;
 }
 .nav-button{
     margin: 10px 10px 10px 10px;
     border-style: solid;
-    border-color: #38ff26;
-}
-.navbar-nav{
-      float: right;
+    border-color: #1ABE00;
 }
 .nav-button:hover{
-    background-color: #38ff26;
+    background-color: #1ABE00;
     color: #fff;
 }
 .nav-button:hover a{
@@ -36,7 +33,6 @@ body{
     border-radius: 8%;
 }
 #heading1{
-    font-family: 'Lobster', cursive;
     font-size: 35px;
 }
 #content-text{
@@ -44,7 +40,7 @@ body{
     text-align: center;
 }
 .select-btn{
-    margin: 30px 20px 0px 20px;
+    margin: 30px 10px 0px 10px;
     text-align: center;
 }
 .twitter-btn{
@@ -73,11 +69,10 @@ body{
 
 }
 .reg-form{
-    background-color: #ffc838;
+    background-color: #c2cbb6;
     color: #000000;
     margin-top: 7%;
     text-align: center;
-    border-radius: 10%;
 }
 .navigation{
     font-size: larger;
@@ -92,6 +87,10 @@ body{
     border: 1px solid black;
     border-radius: 5%;
 }
+.navbar-nav{
+        text-align: center;
+        display: inline;
+    }
 .logout{
     float: right;
     margin-top: 3%;
@@ -129,5 +128,10 @@ a{
 .search-btn:hover{
     background-color: #0084b4;
     color: #FFFFFF;
+}
+@media screen and (min-width: 480px) {
+    .navbar-nav{
+          float: right;
+    }
 }
 
