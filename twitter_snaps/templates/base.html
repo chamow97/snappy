@@ -11,18 +11,25 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     {#        Bootstrap CSS#}
     <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}">
-
+    <link rel="stylesheet" href="{% static 'plugins/lightbox/styles/ns-awesome-gallery.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/simplelightbox/dist/simplelightbox.css' %}">
 {#    jQuery#}
     <script type="text/javascript" src="{% static 'plugins/jquery.js' %}"></script>
-{#    Bootstrap JS#}
+{#    lightbox js#}
+    <script type="text/javascript" src="{% static 'plugins/simplelightbox/dist/simple-lightbox.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/lightbox/jquery.ns-awesome-gallery.js' %}"></script>
+    {#    Bootstrap JS#}
     <script type="text/javascript" src="{% static 'plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
 {#    local CSS#}
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
 {#    toastr#}
     <script type="text/javascript" src="{% static 'plugins/toastr/build/toastr.min.js' %}" > </script>
     <link rel="stylesheet" href="{% static 'plugins/toastr/build/toastr.css' %}">
+{#    lightbox#}
+
 </head>
 <body>
+<div class="loader" style="background: url('{% static 'images/loading1.gif' %}') 50% 50% no-repeat rgb(249,249,249);"></div>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid nav-content">
         <div class="navbar-header">
@@ -68,4 +75,5 @@
 {% block content %}
 {% endblock %}
 </body>
+<script type="text/javascript" src="{% static 'js/home.js' %}"></script>
 </html>

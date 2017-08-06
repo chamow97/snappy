@@ -1,37 +1,50 @@
+from TwitterAPI import TwitterAPI
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
 from django.views import View
-from TwitterAPI import TwitterAPI
+# from TwitterAPI import TwitterAPI
 from twitter_snaps.forms import UserForm
+from django.views.decorators.csrf import csrf_exempt
+import json
 
+consumer_key = 'u7Y4lmzfCLFybH1HdiCZhuRf4'
+consumer_secret_key = 'CjEwZ4t3Xw42HloQht90MnLMTHInW0cRCYZgsGoNuAL3Wib3Wr'
+access_token = '342784431-eKqhjwlXEBHwcLP8sOxAdl8JjMYiroZs7mcwGBip'
+secret_access_token = 'pnYADssIJrlafbH1hH2PgpkKoK5YotBcKkmt30dyLcY2X'
 
-
-
-
-api = TwitterAPI(consumer_key, consumer_secret_key, access_token, secret_access_token)
-
-# @login_required
-def twitter_feed(request):
+def twitter_feed(request, search):
     import tweepy
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret_key)
     auth.set_access_token(access_token, secret_access_token)
     api = tweepy.API(auth)
-    public_tweets = api.home_timeline()
-    tweets = []
-    for tweet in public_tweets:
-        print(tweet)
-        status = tweet.text
-        # tweet_date = tweet.relative_created_at
-        tweets.append({'status':status})
-    return tweets
+    images = []
+    tweet_text = []
+    user = []
+    for tweet in tweepy.Cursor(api.search,
+                                q=search,
+                                lang="en", include_entities=True).items(20):
+        if 'media' in tweet.entities:
+            for image in tweet.entities['media']:
+                images.append(image['media_url'])
+                tweet_text.append(tweet.text)
+                user.append(tweet.user.name)
+    result = json.dumps({
+        'images':images,
+        'text': tweet_text,
+        'user': user
+    })
+    return HttpResponse(result, content_type='application/json')
+
+@csrf_exempt
+def searchTweet(request):
+    search = request.POST.get("search")
+    tweets = twitter_feed(request, search)
+    return HttpResponse(tweets)
 
 def index(request):
-    tweets = twitter_feed(request)
-    return render(request, 'index.html', {'tweets' : tweets})
-
-def twitter_snaps(request):
-    return render(request, 'twitter_snaps.html')
+    return render(request, 'index.html')
 
 def login_user(request):
     if not request.user.is_authenticated():

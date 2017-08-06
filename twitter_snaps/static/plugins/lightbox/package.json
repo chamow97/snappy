@@ -1,0 +1,24 @@
+{
+  "name": "ns-awesome-gallery",
+  "version": "1.0.0",
+  "description": "jQuery photos gallery plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch --output-style compressed styles/main.scss > styles/ns-awesome-gallery.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FeelGoodInc/ns-awesome-gallery.git"
+  },
+  "author": "Nikita Syardov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FeelGoodInc/ns-awesome-gallery/issues"
+  },
+  "homepage": "https://github.com/FeelGoodInc/ns-awesome-gallery#readme",
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.0"
+  }
+}
