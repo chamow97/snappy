@@ -16,14 +16,23 @@ function searchTweet()
         url: '/searchTweet',
         type: 'POST',
         success: function (data) {
-            document.getElementById("tweet-content").innerHTML = "";
+            // document.getElementById("tweet-content").innerHTML = "";
             var data = JSON.parse(data);
-            var gallery = []
+            var gallery = [];
+            var text = "<br><div style='text-align: center; font-size: 20px;'>Search results for: " +
+                "<span style='background-color: #8cff77; border-radius: 5px; font-family: ";
+            text += "Lobster', cursive'; > ";
+            text += search;
+            text += "</span></div><br><br>";
+            document.getElementById("tweet-content").innerHTML += text;
+
             for(var i = 0; i < data["images"].length; i++)
             {
                 var html = "<a href='";
                 html += data.images[i];
-                html += "' class='big' > <img style='max-height: 300px; max-width: 300px;' class='tweet-images' src='";
+                html += "' class='big' title='";
+                html += data.user[i] + " - " + data.text[i];
+                html += "'> <img style='border-radius: 30px; width: 300px; height: 300px; margin: 10px 10px 10px 10px'; class='tweet-images' src='";
                 html += data.images[i];
                 html += "' >";
                 document.getElementById("tweet-content").innerHTML += html;
@@ -31,11 +40,6 @@ function searchTweet()
             }
             $(".loader").hide();
             var gallery = $('#tweet-content a').simpleLightbox();
-
-            // $("#tweet-content").nsAwesomeGallery({
-            //     images: gallery,
-            //     columns: 2
-            // });
             document.getElementById("search-text").value = "";
         },
         error: function () {
@@ -45,4 +49,10 @@ function searchTweet()
         }
 
     });
+}
+
+function twitterOrInsta()
+{
+    $(".twitter-btn").toggleClass("selected");
+    $(".insta-btn").toggleClass("selected");
 }

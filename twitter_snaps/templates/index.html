@@ -6,12 +6,13 @@
 <div class="container-fluid">
 <div class="row">
     <div class="col col-xs-offset-2 col-sm-offset-4 col-lg-offset-5 col-md-offset-5">
-        <button class="btn select-btn twitter-btn">Twitter</button>
-        <button class="btn select-btn insta-btn">Instagr@m</button>
+        <button class="btn select-btn twitter-btn selected" onclick="twitterOrInsta();">Twitter</button>
+        <button class="btn select-btn insta-btn" onclick="twitterOrInsta();">Instagr@m</button>
     </div>
 </div>
 <div class="row">
     <div class="col-sm-3 col-xs-2 col-md-4 col-lg-4">
+    <span style="float: right; font-size: 30px; margin-top: 19px;" data-toggle="modal" data-target="#helpModal" class="glyphicon glyphicon-question-sign"></span>
     </div>
     <div class="col col-xs-8 col-sm-7 col-lg-4 col-md-4">
         <div class="input-group search-bar">
@@ -24,11 +25,33 @@
     </div>
     <div class="col-sm-3 col-xs-2 col-md-4 col-lg-4">
     </div>
-</div>
 
+</div>
+    {% if not request.user.is_active %}
+        <script>
+        toastr.info("Login/Register to continue!");
+        $("#search-text").attr("disabled", "disabled");
+        </script>
+    {% endif %}
 <br><br><br>
 <div class="row" id="tweet-content">
+</div>
+<br><br>
+</div>
+    <div id="helpModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Snappy - Help</h3>
+            </div>
+            <div class="modal-body">
 
-</div>
-</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
 {% endblock %}

@@ -68,6 +68,7 @@ body{
     background-color: #fb3958;
     color: #ffffff;
 }
+
 .twitter-btn:hover, .twitter-btn.selected{
     border-style: solid;
     border-color: #ffffff;
@@ -135,6 +136,9 @@ a{
 .search-btn:hover{
     background-color: #0084b4;
     color: #FFFFFF;
+}
+.modal-title{
+    text-align: center;
 }
 @media screen and (min-width: 480px) {
     .navbar-nav{
