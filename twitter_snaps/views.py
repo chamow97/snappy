@@ -9,7 +9,10 @@ from twitter_snaps.forms import UserForm
 from django.views.decorators.csrf import csrf_exempt
 import json
 
-
+consumer_key = 'u7Y4lmzfCLFybH1HdiCZhuRf4'
+consumer_secret_key = 'CjEwZ4t3Xw42HloQht90MnLMTHInW0cRCYZgsGoNuAL3Wib3Wr'
+access_token = '342784431-eKqhjwlXEBHwcLP8sOxAdl8JjMYiroZs7mcwGBip'
+secret_access_token = 'pnYADssIJrlafbH1hH2PgpkKoK5YotBcKkmt30dyLcY2X'
 
 def twitter_feed(request, search):
     import tweepy
@@ -20,7 +23,7 @@ def twitter_feed(request, search):
     images = []
     user = []
     for tweet in tweepy.Cursor(api.search,
-                                q=search,
+                                q=str(search + " -filter:retweets"),
                                 lang="en",
                                 count=10,
                                 include_entities=True).items(200):

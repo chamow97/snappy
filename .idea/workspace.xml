@@ -2,82 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee1ccaa1-2f0a-44ff-9b79-9f238348a4f3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/images/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/images/loading1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/css/jquery.galereya.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/css/jquery.galereya.ie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/galereya.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/black_lozenge.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/black_lozenge_@2X.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-arrow_down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-arrow_down@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-arrow_next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-arrow_next@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-arrow_prev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-arrow_prev@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-arrow_up.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-arrow_up@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-close@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-pause.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-pause@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-play@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/img/galereya-slider-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/js/jquery.galereya.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/galereya-latest/js/jquery.galereya.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/lightbox/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/lightbox/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/lightbox/jquery.ns-awesome-gallery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/lightbox/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/lightbox/styles/main.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/lightbox/styles/ns-awesome-gallery.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/demo.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/image9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/images/thumbs/thumb9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/demo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/dist/simple-lightbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/dist/simple-lightbox.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/dist/simplelightbox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/dist/simplelightbox.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/dist/simplelightbox.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_snaps/static/css/home.css" afterPath="$PROJECT_DIR$/twitter_snaps/static/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_snaps/static/js/home.js" afterPath="$PROJECT_DIR$/twitter_snaps/static/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_snaps/templates/base.html" afterPath="$PROJECT_DIR$/twitter_snaps/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_snaps/templates/index.html" afterPath="$PROJECT_DIR$/twitter_snaps/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_snaps/urls.py" afterPath="$PROJECT_DIR$/twitter_snaps/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_snaps/views.py" afterPath="$PROJECT_DIR$/twitter_snaps/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,8 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+            <state relative-caret-position="702">
+              <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
               <folding>
                 <element signature="e#569#625#0#HTML" expanded="true" />
                 <element signature="e#850#883#0#HTML" expanded="true" />
@@ -123,8 +49,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+            <state relative-caret-position="1080">
+              <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -133,15 +59,15 @@
       <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/static/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="22" column="73" lean-forward="false" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+            <state relative-caret-position="252">
+              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding>
-                <marker date="1502211690954" expanded="true" signature="578:597" ph="..." />
-                <marker date="1502211690954" expanded="true" signature="578:614" ph="..." />
-                <marker date="1502211690954" expanded="true" signature="670:689" ph="..." />
-                <marker date="1502211690954" expanded="true" signature="670:696" ph="..." />
-                <marker date="1502211690954" expanded="true" signature="670:716" ph="..." />
-                <marker date="1502211690954" expanded="true" signature="670:730" ph="..." />
+                <marker date="1503126970840" expanded="true" signature="466:1773" ph="{...}" />
+                <marker date="1503126970840" expanded="true" signature="466:1969" ph="{&quot;url&quot;: '/searchTweet'...}" />
+                <marker date="1503126970840" expanded="true" signature="466:1973" ph="{...}" />
+                <marker date="1503126970840" expanded="true" signature="996:1601" ph="{...}" />
+                <marker date="1503126970840" expanded="true" signature="1802:1962" ph="{...}" />
+                <marker date="1503126970840" expanded="true" signature="2001:2096" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -150,7 +76,7 @@
       <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/static/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1460">
+            <state relative-caret-position="2520">
               <caret line="140" column="22" lean-forward="false" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="22" />
               <folding />
             </state>
@@ -160,9 +86,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="450">
+              <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,7 +118,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snappy/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
+            <state relative-caret-position="792">
               <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
               <folding />
             </state>
@@ -289,8 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -435,6 +361,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -721,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +684,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="34" column="63" lean-forward="false" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
-          <folding />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -779,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +757,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -844,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +823,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -909,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +889,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -974,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,13 +959,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/snappy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="792">
           <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
           <folding />
         </state>
@@ -1057,26 +986,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+        <state relative-caret-position="1080">
+          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+        <state relative-caret-position="702">
+          <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
           <folding>
             <element signature="e#569#625#0#HTML" expanded="true" />
             <element signature="e#850#883#0#HTML" expanded="true" />
@@ -1087,32 +1008,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/static/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="22" column="73" lean-forward="false" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+        <state relative-caret-position="252">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
-            <marker date="1502211690954" expanded="true" signature="578:597" ph="..." />
-            <marker date="1502211690954" expanded="true" signature="578:614" ph="..." />
-            <marker date="1502211690954" expanded="true" signature="670:689" ph="..." />
-            <marker date="1502211690954" expanded="true" signature="670:696" ph="..." />
-            <marker date="1502211690954" expanded="true" signature="670:716" ph="..." />
-            <marker date="1502211690954" expanded="true" signature="670:730" ph="..." />
+            <marker date="1503126970840" expanded="true" signature="466:1773" ph="{...}" />
+            <marker date="1503126970840" expanded="true" signature="466:1969" ph="{&quot;url&quot;: '/searchTweet'...}" />
+            <marker date="1503126970840" expanded="true" signature="466:1973" ph="{...}" />
+            <marker date="1503126970840" expanded="true" signature="996:1601" ph="{...}" />
+            <marker date="1503126970840" expanded="true" signature="1802:1962" ph="{...}" />
+            <marker date="1503126970840" expanded="true" signature="2001:2096" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/static/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1460">
+        <state relative-caret-position="2520">
           <caret line="140" column="22" lean-forward="false" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
