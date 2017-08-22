@@ -1,9 +1,17 @@
 
 $(".loader").hide();
 
+function checkBoxToggle() {
+    $("#includeMore").toggleClass(this.checked);
+}
 function searchTweet()
 {
     var search = document.getElementById("search-text").value;
+    var isChecked = $("#includeMore").is(':checked');
+    if(isChecked === false)
+    {
+        document.getElementById("tweet-content").innerHTML = "";
+    }
     if(search == "")
     {
         toastr.error("The search cannot be empty!");
@@ -16,7 +24,6 @@ function searchTweet()
         url: '/searchTweet',
         type: 'POST',
         success: function (data) {
-            // document.getElementById("tweet-content").innerHTML = "";
             var data = JSON.parse(data);
             var gallery = [];
             var text = "<br><div style='text-align: center; font-size: 20px;'>Search results for: " +

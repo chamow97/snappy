@@ -4,7 +4,8 @@
     <list default="true" id="ee1ccaa1-2f0a-44ff-9b79-9f238348a4f3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_snaps/views.py" afterPath="$PROJECT_DIR$/twitter_snaps/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_snaps/static/js/home.js" afterPath="$PROJECT_DIR$/twitter_snaps/static/js/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_snaps/templates/index.html" afterPath="$PROJECT_DIR$/twitter_snaps/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,13 +36,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-              <folding>
-                <element signature="e#569#625#0#HTML" expanded="true" />
-                <element signature="e#850#883#0#HTML" expanded="true" />
-                <element signature="e#1840#1847#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,18 +53,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/static/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="36">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <marker date="1503126970840" expanded="true" signature="466:1773" ph="{...}" />
-                <marker date="1503126970840" expanded="true" signature="466:1969" ph="{&quot;url&quot;: '/searchTweet'...}" />
-                <marker date="1503126970840" expanded="true" signature="466:1973" ph="{...}" />
-                <marker date="1503126970840" expanded="true" signature="996:1601" ph="{...}" />
-                <marker date="1503126970840" expanded="true" signature="1802:1962" ph="{...}" />
-                <marker date="1503126970840" expanded="true" signature="2001:2096" ph="{...}" />
+                <marker date="1503361041179" expanded="true" signature="633:1939" ph="{...}" />
+                <marker date="1503361041179" expanded="true" signature="744:780" ph="..." />
+                <marker date="1503361041179" expanded="true" signature="836:896" ph="..." />
               </folding>
             </state>
           </provider>
@@ -83,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="288">
               <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
@@ -118,7 +112,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snappy/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
+            <state relative-caret-position="810">
               <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
               <folding />
             </state>
@@ -182,11 +176,11 @@
         <option value="$PROJECT_DIR$/twitter_snaps/forms.py" />
         <option value="$PROJECT_DIR$/twitter_snaps/urls.py" />
         <option value="$PROJECT_DIR$/snappy/settings.py" />
-        <option value="$PROJECT_DIR$/twitter_snaps/static/js/home.js" />
         <option value="$PROJECT_DIR$/twitter_snaps/templates/base.html" />
-        <option value="$PROJECT_DIR$/twitter_snaps/templates/index.html" />
         <option value="$PROJECT_DIR$/twitter_snaps/static/css/home.css" />
         <option value="$PROJECT_DIR$/twitter_snaps/views.py" />
+        <option value="$PROJECT_DIR$/twitter_snaps/templates/index.html" />
+        <option value="$PROJECT_DIR$/twitter_snaps/static/js/home.js" />
       </list>
     </option>
   </component>
@@ -649,6 +643,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -664,11 +659,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#569#625#0#HTML" expanded="true" />
-            <element signature="e#850#883#0#HTML" expanded="true" />
-            <element signature="e#1840#1847#1#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -708,6 +699,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -730,11 +722,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#569#625#0#HTML" expanded="true" />
-            <element signature="e#850#883#0#HTML" expanded="true" />
-            <element signature="e#1840#1847#1#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -774,6 +762,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -796,11 +785,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="e#569#625#0#HTML" expanded="true" />
-            <element signature="e#850#883#0#HTML" expanded="true" />
-            <element signature="e#1840#1847#1#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -840,6 +825,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -862,11 +848,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="e#569#625#0#HTML" expanded="true" />
-            <element signature="e#850#883#0#HTML" expanded="true" />
-            <element signature="e#1840#1847#1#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -906,6 +888,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,6 +934,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -959,12 +942,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/snappy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
+        <state relative-caret-position="810">
           <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
           <folding />
         </state>
@@ -994,33 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-          <folding>
-            <element signature="e#569#625#0#HTML" expanded="true" />
-            <element signature="e#850#883#0#HTML" expanded="true" />
-            <element signature="e#1840#1847#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <marker date="1503126970840" expanded="true" signature="466:1773" ph="{...}" />
-            <marker date="1503126970840" expanded="true" signature="466:1969" ph="{&quot;url&quot;: '/searchTweet'...}" />
-            <marker date="1503126970840" expanded="true" signature="466:1973" ph="{...}" />
-            <marker date="1503126970840" expanded="true" signature="996:1601" ph="{...}" />
-            <marker date="1503126970840" expanded="true" signature="1802:1962" ph="{...}" />
-            <marker date="1503126970840" expanded="true" signature="2001:2096" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/static/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2520">
@@ -1039,10 +996,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="288">
           <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <marker date="1503361041179" expanded="true" signature="633:1939" ph="{...}" />
+            <marker date="1503361041179" expanded="true" signature="744:780" ph="..." />
+            <marker date="1503361041179" expanded="true" signature="836:896" ph="..." />
           </folding>
         </state>
       </provider>

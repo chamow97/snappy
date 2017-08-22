@@ -27,6 +27,11 @@
     </div>
 
 </div>
+<div class="row">
+    <div class="col-sm-offset-4 col-xs-offset-3 col-md-offset-5">
+        <input id="includeMore" type="checkbox" onclick="checkBoxToggle();"> Include previous results
+    </div>
+</div>
     {% if not request.user.is_active %}
         <script>
         toastr.info("Login/Register to continue!");
@@ -49,7 +54,8 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" data-dismiss="modal">Close</button>
+                <button class="btn btn-info
+" type="button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
