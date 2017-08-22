@@ -7,12 +7,11 @@ from django.shortcuts import render, render_to_response, redirect
 from django.views import View
 from twitter_snaps.forms import UserForm
 from django.views.decorators.csrf import csrf_exempt
+from instagram.client import InstagramAPI
 import json
 
-consumer_key = 'u7Y4lmzfCLFybH1HdiCZhuRf4'
-consumer_secret_key = 'CjEwZ4t3Xw42HloQht90MnLMTHInW0cRCYZgsGoNuAL3Wib3Wr'
-access_token = '342784431-eKqhjwlXEBHwcLP8sOxAdl8JjMYiroZs7mcwGBip'
-secret_access_token = 'pnYADssIJrlafbH1hH2PgpkKoK5YotBcKkmt30dyLcY2X'
+
+
 
 def twitter_feed(request, search):
     import tweepy
