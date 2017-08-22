@@ -3,7 +3,7 @@ from datetime import date
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render, render_to_response, redirect
 from django.views import View
 from twitter_snaps.forms import UserForm
 from django.views.decorators.csrf import csrf_exempt
@@ -58,7 +58,7 @@ def login_user(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return render(request, 'index.html')
+                    return redirect('/')
                 else:
                     return render(request, 'login_user.html',
                                   {'error_message' : 'Your account has been disabled!'})
@@ -75,7 +75,7 @@ def logout_user(request):
     context = {
         'form': form
     }
-    return render(request, 'login_user.html')
+    return redirect('/')
 
 
 
@@ -102,7 +102,7 @@ class UserFormView(View):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return render(request, 'index.html')
+                    return redirect('/')
 
         return render(request, self.template_name, {'form':form})
 
