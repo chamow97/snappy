@@ -56,16 +56,16 @@ body{
     background-color: #FFFFFF;
     color: #0084b4;
 }
-.insta-btn{
+.tumblr-btn{
     border-style: solid;
-    border-color: #fb3958;
+    border-color: #34526f;
     background-color: #ffffff;
-    color: #fb3958;
+    color: #34526f;
 }
-.insta-btn:hover, .insta-btn.selected{
+.tumblr-btn:hover, .tumblr-btn.selected{
     border-style: solid;
     border-color: #ffffff;
-    background-color: #fb3958;
+    background-color: #34526f;
     color: #ffffff;
 }
 

@@ -4,9 +4,10 @@ $(".loader").hide();
 function checkBoxToggle() {
     $("#includeMore").toggleClass(this.checked);
 }
-function searchTweet()
+function searchTags(selectedPlatform)
 {
     var search = document.getElementById("search-text").value;
+    search = search.split(" ")[0];
     var isChecked = $("#includeMore").is(':checked');
     if(isChecked === false)
     {
@@ -17,20 +18,30 @@ function searchTweet()
         toastr.error("The search cannot be empty!");
         return;
     }
-    search = "#"+search;
     $(".loader").show();
     $.ajax({
-        data: {'search':search},
-        url: '/searchTweet',
+        data: {'search':search, 'selectedPlatform':selectedPlatform },
+        url: '/searchTags',
         type: 'POST',
         success: function (data) {
             var data = JSON.parse(data);
             var gallery = [];
-            var text = "<br><div style='text-align: center; font-size: 20px;'>Search results for: " +
+            if(selectedPlatform == 0){
+                 var text = "<br><br><div style='text-align: center; font-size: 20px;'>Tweets tagged with: " +
                 "<span style='background-color: #8cff77; border-radius: 5px; font-family: ";
-            text += "Lobster', cursive'; > ";
-            text += search;
-            text += "</span></div><br><br>";
+                    text += "Lobster', cursive'; > #";
+                    text += search;
+                    text += "</span></div><br><br>";
+
+            }
+            else{
+                var text = "<br><br><div style='text-align: center; font-size: 20px;'>Tumblr Images with tag: " +
+                "<span style='background-color: #8cff77; border-radius: 5px; font-family: ";
+                    text += "Lobster', cursive'; >";
+                    text += search;
+                    text += "</span></div><br><br>";
+            }
+
             document.getElementById("tweet-content").innerHTML += text;
 
             for(var i = 0; i < data["images"].length; i++)
@@ -58,8 +69,19 @@ function searchTweet()
     });
 }
 
-function twitterOrInsta()
-{
+function twitterOrTumblrToggle() {
     $(".twitter-btn").toggleClass("selected");
-    $(".insta-btn").toggleClass("selected");
+    $(".tumblr-btn").toggleClass("selected");
+}
+
+function twitterOrTumblr()
+{
+    var isTwitterChecked = $(".twitter-btn").hasClass("selected");
+    if(isTwitterChecked === true){
+        searchTags(0);
+    }
+    else{
+        searchTags(1);
+    }
+
 }

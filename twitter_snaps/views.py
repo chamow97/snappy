@@ -7,14 +7,13 @@ from django.shortcuts import render, render_to_response, redirect
 from django.views import View
 from twitter_snaps.forms import UserForm
 from django.views.decorators.csrf import csrf_exempt
-from instagram.client import InstagramAPI
 import json
-
+import requests
+import tweepy
 
 
 
 def twitter_feed(request, search):
-    import tweepy
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret_key)
     auth.set_access_token(access_token, secret_access_token)
     api = tweepy.API(auth)
@@ -25,7 +24,7 @@ def twitter_feed(request, search):
                                 q=str(search + " -filter:retweets"),
                                 lang="en",
                                 count=10,
-                                include_entities=True).items(200):
+                                include_entities=True).items(150):
         if 'media' in tweet.entities:
             for image in tweet.entities['media']:
                 images.append(image['media_url'])
@@ -38,11 +37,40 @@ def twitter_feed(request, search):
     })
     return HttpResponse(ans, content_type='application/json')
 
+def tumblr_tags(request, search):
+    url = "https://api.tumblr.com/v2/tagged?tag=" + search + "&api_key=" + api_key
+    data = requests.get(url)
+    feeds = data.json()
+    images = []
+    slug = []
+    blog = []
+    for data in feeds["response"]:
+        try:
+            for image_data in data["photos"]:
+                images.append(image_data["original_size"]["url"])
+            slug.append(data["slug"])
+            blog.append(data["blog_name"])
+
+        except:
+            print("")
+    ans = json.dumps({
+        'images': images,
+        'text': slug,
+        'user': blog
+    })
+    return HttpResponse(ans, content_type='application/json')
+
 @csrf_exempt
-def searchTweet(request):
+def searchTags(request):
     search = request.POST.get("search")
-    tweets = twitter_feed(request, search)
-    return HttpResponse(tweets)
+    selected_platform = int(request.POST.get("selectedPlatform"))
+    if selected_platform == 0:
+        search = "#" + search
+        tweets = twitter_feed(request, search)
+        return HttpResponse(tweets)
+    else:
+        tumblr = tumblr_tags(request, search)
+        return HttpResponse(tumblr)
 
 def index(request):
     return render(request, 'index.html')
