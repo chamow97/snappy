@@ -26,7 +26,6 @@
 		<li>Multiple hashtag search</li>
 		<li>Save the search result for prompting the user</li>
 	</ul>
-	<br>
 	<h3>Contact</h3>
 	<p>For queries or comments, contact here: <a href="mailto:chamow97@hotmail.com">chamow97@hotmail.com</a></p>
 </body>
