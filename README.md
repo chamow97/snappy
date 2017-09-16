@@ -12,7 +12,6 @@
 	<img src="screencasts/feed.gif">
 	<br>
 	<h3>Running the web app</h4>
-	<h4>Linux</h4>
 	<ol style="text-align: left;">
 		<li>Clone the repository - <code>git clone https://github.com/chamow97/snappy</code></li>
 		<li>Install python 3 - <code>sudo apt-get update</code> <code>sudo apt-get install python3</code></li>
