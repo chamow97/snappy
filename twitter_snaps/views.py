@@ -1,9 +1,6 @@
-from datetime import date
-
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
-from django.shortcuts import render, render_to_response, redirect
+from django.shortcuts import render, redirect
 from django.views import View
 from twitter_snaps.forms import UserForm
 from django.views.decorators.csrf import csrf_exempt
@@ -11,6 +8,7 @@ import json
 import requests
 import tweepy
 
+# authentication for tweepy
 consumer_key = 'JfRjo39DPofzFwwEi3awIqqiJ'
 consumer_secret_key = 'AtsHqGajRTUkSw96bHNwEixlbzjPaoYXrtBP9kDTaaIfE8J506'
 access_token = '342784431-eKqhjwlXEBHwcLP8sOxAdl8JjMYiroZs7mcwGBip'
