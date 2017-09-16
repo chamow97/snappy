@@ -18,6 +18,7 @@
 		<li>Install Django - <code>pip3 install django</code></li>
 		<li>Install Tweepy - <code>sudo pip3 install tweepy</code></li>
 		<li>Run the web app by navigating into the master directory- <code>python3 manage.py runserver</code></li>
+		<li><strong>Note: You should register your application and get your consumer key for both Twitter and Tumblr and insert it in views.py to make this application work.</strong> Click <a href="https://dev.twitter.com/">here</a> to get your Twitter api key and <a href="https://www.tumblr.com/developers">here</a> for Tumblr api key.</li>
 	</ol>
 	<h3>Future Works</h3>
 	<ul style="text-align: left;">
