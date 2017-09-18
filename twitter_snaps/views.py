@@ -9,10 +9,10 @@ import requests
 import tweepy
 
 # authentication for tweepy
-consumer_key = ''
-consumer_secret_key = ''
-access_token = ''
-secret_access_token = ''
+consumer_key = 'wrjiRAWppvVgiQII9Nge858Wy'
+consumer_secret_key = '6vbYSHwMxxdgO4pRLCbWciiC3SutEbY7XWe13zrUXiKnFBgxKR'
+access_token = '342784431-eKqhjwlXEBHwcLP8sOxAdl8JjMYiroZs7mcwGBip'
+secret_access_token = 'pnYADssIJrlafbH1hH2PgpkKoK5YotBcKkmt30dyLcY2X'
 
 
 def twitter_feed(request, search):
@@ -40,7 +40,7 @@ def twitter_feed(request, search):
     return HttpResponse(ans, content_type='application/json')
 
 def tumblr_tags(request, search):
-    api_key = ""
+    api_key = "IRb0id61fySh2utB0nCBPjJZIDgnBUfvTCigcbGRBRgSBrC6Dd"
     url = "https://api.tumblr.com/v2/tagged?tag=" + search + "&api_key=" + api_key
     data = requests.get(url)
     feeds = data.json()
