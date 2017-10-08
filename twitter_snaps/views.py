@@ -1,12 +1,12 @@
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from django.views import View
 from twitter_snaps.forms import UserForm
 from django.views.decorators.csrf import csrf_exempt
 import json
 import requests
 import tweepy
+from django.views.generic import View
 
 # authentication for tweepy
 consumer_key = 'wrjiRAWppvVgiQII9Nge858Wy'
