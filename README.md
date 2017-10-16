@@ -25,6 +25,7 @@
 	</ol>
 	<h3>Future Works</h3>
 	<ul style="text-align: left;">
+	    <li>Filter NSFW images</li>
 		<li>Add more websites</li>
 		<li>Multiple hashtag search</li>
 		<li>Save the search result for prompting the user</li>
