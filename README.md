@@ -1,4 +1,4 @@
-<body style="text-align: center;">
+<center>
 	<h1>Snappy</h1>
 	<br>
 	<h3>Live site at: <a href="https://chamow.pythonanywhere.com">chamow.pythonanywhere.com</a></h3>
@@ -13,7 +13,7 @@
 	<br>
 	<img src="screencasts/feed.gif">
 	<br>
-	<h3>Running the web app</h4>
+	<h3>Running the web app</h3>
 	<ol style="text-align: left;">
 		<li>Clone the repository - <code>git clone https://github.com/chamow97/snappy</code></li>
 		<li>Install python 3 - <code>sudo apt-get update</code> <code>sudo apt-get install python3</code></li>
@@ -32,4 +32,5 @@
 	</ul>
 	<h3>Contact</h3>
 	<p>For queries or comments, contact here: <a href="mailto:chamow97@hotmail.com">chamow97@hotmail.com</a></p>
-</body>
+	<br>
+</center>
