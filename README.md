@@ -30,6 +30,10 @@
 		<li>Multiple hashtag search</li>
 		<li>Save the search result for prompting the user</li>
 	</ul>
+	<h3>Contributors</h3>
+	<ul>
+	<li><a href="https://github.com/siddique26">Mohamad Siddique</a></li>
+	</ul>
 	<h3>Contact</h3>
 	<p>For queries or comments, contact here: <a href="mailto:chamow97@hotmail.com">chamow97@hotmail.com</a></p>
 	<br>
