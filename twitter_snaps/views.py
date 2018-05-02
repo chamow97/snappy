@@ -82,7 +82,7 @@ def index(request):
     return render(request, 'index.html')
 
 def login_user(request):
-    if not request.user.is_authenticated():
+    if not request.user.is_authenticated:
         if request.method == 'POST':
             username = request.POST["username"]
             password = request.POST["password"]
