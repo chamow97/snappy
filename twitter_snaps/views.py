@@ -8,11 +8,7 @@ import requests
 import tweepy
 from django.views.generic import View
 
-# authentication for tweepy
-<<<<<<< HEAD
-# authentication for tweepy
-=======
->>>>>>> df12f45e359fc54bcff7303374932d5efe12ceda
+
 consumer_key = 'edvGYBKwCf5LzHVVY3IvVJgmM'
 consumer_secret_key = 'X5uKW5wiAbCW9pjqe0ublMBJ5O2PYUeeWqeUbkr17TQNP0KYrL'
 access_token = '342784431-eKqhjwlXEBHwcLP8sOxAdl8JjMYiroZs7mcwGBip'
