@@ -91,3 +91,8 @@ function twitterOrTumblr()
     }
 
 }
+
+function showWarning(){
+    toastr.info('Login/Register to use the web app!');
+
+}

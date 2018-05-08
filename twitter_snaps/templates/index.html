@@ -34,8 +34,8 @@
 </div>
     {% if not request.user.is_active %}
         <script>
-        toastr.info("Login/Register to continue!");
         $("#search-text").attr("disabled", "disabled");
+        $(".search-btn").hide();
         </script>
     {% endif %}
 <br><br><br>

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee1ccaa1-2f0a-44ff-9b79-9f238348a4f3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter_snaps/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_snaps/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter_snaps/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_snaps/static/js/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twitter_snaps/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_snaps/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter_snaps/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_snaps/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="32" column="103" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
+            <state relative-caret-position="-51">
+              <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -33,30 +38,22 @@
         <entry file="file://$PROJECT_DIR$/twitter_snaps/static/plugins/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/static/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" selection-start-line="1" selection-end-line="2" />
+            <state relative-caret-position="355">
+              <caret line="95" column="51" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
               <folding>
-                <marker date="1508326859000" expanded="true" signature="1062:1098" ph="..." />
-                <marker date="1508326859000" expanded="true" signature="1154:1214" ph="..." />
-                <marker date="1508326859000" expanded="true" signature="1446:1482" ph="..." />
-                <marker date="1508326859000" expanded="true" signature="1542:1602" ph="..." />
-                <marker date="1508326859000" expanded="true" signature="2144:2525" ph="{...}" />
+                <marker date="1525800739627" expanded="true" signature="1062:1098" ph="..." />
+                <marker date="1525800739627" expanded="true" signature="1154:1214" ph="..." />
+                <marker date="1525800739627" expanded="true" signature="1446:1482" ph="..." />
+                <marker date="1525800739627" expanded="true" signature="1542:1602" ph="..." />
+                <marker date="1525800739627" expanded="true" signature="2144:2525" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,8 +98,8 @@
       <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/static/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="116" column="35" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="35" />
+            <state relative-caret-position="248">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -110,8 +107,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="-336">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -130,7 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>a:ho</find>
       <find>hover</find>
       <find>30ff00</find>
       <find>font-fa</find>
@@ -160,6 +156,7 @@
       <find>}</find>
       <find>response</find>
       <find>nav</find>
+      <find>nav-</find>
     </findStrings>
     <replaceStrings>
       <replace>38ff26</replace>
@@ -175,17 +172,17 @@
         <option value="$PROJECT_DIR$/twitter_snaps/templates/twitter_snaps.html" />
         <option value="$PROJECT_DIR$/twitter_snaps/forms.py" />
         <option value="$PROJECT_DIR$/twitter_snaps/models.py" />
-        <option value="$PROJECT_DIR$/twitter_snaps/static/css/home.css" />
-        <option value="$PROJECT_DIR$/twitter_snaps/templates/index.html" />
         <option value="$PROJECT_DIR$/twitter_snaps/urls.py" />
         <option value="$PROJECT_DIR$/twitter_snaps/templates/login_user.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/snappy/settings.py" />
         <option value="$PROJECT_DIR$/twitter_snaps/views.py" />
         <option value="$PROJECT_DIR$/twitter_snaps/templates/registration_form.html" />
-        <option value="$PROJECT_DIR$/twitter_snaps/static/js/home.js" />
         <option value="$PROJECT_DIR$/twitter_snaps/static/plugins/jquery.js" />
+        <option value="$PROJECT_DIR$/twitter_snaps/static/css/home.css" />
+        <option value="$PROJECT_DIR$/twitter_snaps/templates/index.html" />
         <option value="$PROJECT_DIR$/twitter_snaps/templates/base.html" />
+        <option value="$PROJECT_DIR$/twitter_snaps/static/js/home.js" />
       </list>
     </option>
   </component>
@@ -199,7 +196,6 @@
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/twitter_snaps/static/plugins/lightbox/package.json" />
       <path value="$PROJECT_DIR$/twitter_snaps/static/plugins/simplelightbox/package.json" />
-      <path value="$PROJECT_DIR$/twitter_snaps/static/plugins/toastr/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -214,7 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,6 +264,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -507,30 +503,30 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50292826" side_tool="true" visible="true" weight="0.19273302" />
-      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50292826" side_tool="true" visible="true" weight="0.19273302" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.2185008" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4937107" visible="true" weight="0.20278184" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" sideWeight="0.5062893" side_tool="true" weight="0.17569546" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Salesforce" order="7" weight="0.32861635" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Debug Logs" order="7" />
-      <window_info anchor="bottom" id="Execute Anonymous" order="7" />
+      <window_info anchor="bottom" id="Debug Logs" order="8" />
+      <window_info anchor="bottom" id="Execute Anonymous" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32861635" />
-      <window_info anchor="right" id="Data View" order="4" />
+      <window_info anchor="right" id="Data View" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,6 +547,76 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="103" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/plugins/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-end-line="2" />
+          <folding>
+            <marker date="1525800739627" expanded="true" signature="1062:1098" ph="..." />
+            <marker date="1525800739627" expanded="true" signature="1154:1214" ph="..." />
+            <marker date="1525800739627" expanded="true" signature="1446:1482" ph="..." />
+            <marker date="1525800739627" expanded="true" signature="1542:1602" ph="..." />
+            <marker date="1525800739627" expanded="true" signature="2144:2525" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snappy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snappy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="116" column="35" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/static/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -571,9 +637,6 @@
           <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -624,9 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -654,9 +714,6 @@
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/css/home.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/apps.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -672,9 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -702,9 +756,6 @@
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/css/home.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/apps.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -736,15 +787,6 @@
     </entry>
     <entry file="file:///usr/local/lib/python3.5/dist-packages/django/utils/autoreload.py" />
     <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/twitter_snaps.html" />
-    <entry file="file://$PROJECT_DIR$/snappy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -758,12 +800,6 @@
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/forms.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -785,16 +821,6 @@
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/snappy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -824,41 +850,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/js/home.js">
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/plugins/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-end-line="2" />
-          <folding>
-            <marker date="1508326859000" expanded="true" signature="1062:1098" ph="..." />
-            <marker date="1508326859000" expanded="true" signature="1154:1214" ph="..." />
-            <marker date="1508326859000" expanded="true" signature="1446:1482" ph="..." />
-            <marker date="1508326859000" expanded="true" signature="1542:1602" ph="..." />
-            <marker date="1508326859000" expanded="true" signature="2144:2525" ph="{...}" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/static/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="116" column="35" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="35" />
+        <state relative-caret-position="248">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/plugins/jquery.js">
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="-336">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_snaps/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="103" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
+        <state relative-caret-position="-51">
+          <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_snaps/static/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="95" column="51" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
+          <folding>
+            <marker date="1525800739627" expanded="true" signature="1062:1098" ph="..." />
+            <marker date="1525800739627" expanded="true" signature="1154:1214" ph="..." />
+            <marker date="1525800739627" expanded="true" signature="1446:1482" ph="..." />
+            <marker date="1525800739627" expanded="true" signature="1542:1602" ph="..." />
+            <marker date="1525800739627" expanded="true" signature="2144:2525" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

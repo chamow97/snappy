@@ -60,13 +60,14 @@ toastr.options = {
         </div>
         <div class="collapse navbar-collapse" id="navBar">
             <ul class="nav navbar-nav" id="hello">
-               <li><button class="btn btn-default nav-button"><a href="../register">Register</a></button></li>
-               <li><button class="btn btn-default nav-button login-btn"><a href="../login_user">Login</a></button></li>
-               <li><button class="btn btn-default nav-button logout-btn"><a href="../logout_user">Logout</a></button></li>
+               <li><a href="../register"><button class="btn btn-default nav-button">Register</button></a></li>
+               <li><a href="../login_user"><button class="btn btn-default nav-button login-btn">Login</button></a></li>
+               <li><a href="../logout_user"><button class="btn btn-default nav-button logout-btn">Logout</button></a></li>
             </ul>
         </div>
     </div>
 </nav>
+<br>
 <div class="row">
     <div class="col-md-offset-0 col-sm-offset-0 col-lg-offset-0 col-xs-offset-0" id = "heading">
         Snappy!
@@ -94,4 +95,11 @@ toastr.options = {
 {% endblock %}
 </body>
 <script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+{% if not request.user.is_active %}
+    <script>
+    if(document.querySelector(".search-bar") != null){
+        document.querySelector(".search-bar").addEventListener('click', showWarning);
+    }
+    </script>
+{% endif %}
 </html>
