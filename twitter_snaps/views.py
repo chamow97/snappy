@@ -9,10 +9,6 @@ import tweepy
 from django.views.generic import View
 
 
-consumer_key = 'edvGYBKwCf5LzHVVY3IvVJgmM'
-consumer_secret_key = 'X5uKW5wiAbCW9pjqe0ublMBJ5O2PYUeeWqeUbkr17TQNP0KYrL'
-access_token = '342784431-eKqhjwlXEBHwcLP8sOxAdl8JjMYiroZs7mcwGBip'
-secret_access_token = 'pnYADssIJrlafbH1hH2PgpkKoK5YotBcKkmt30dyLcY2X'
 
 
 
