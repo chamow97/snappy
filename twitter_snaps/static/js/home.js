@@ -1,6 +1,5 @@
 
 $(".loader").hide();
-
 function checkBoxToggle() {
     $("#includeMore").toggleClass(this.checked);
 }
@@ -33,19 +32,19 @@ function searchTags(selectedPlatform)
             var data = JSON.parse(data);
             var gallery = [];
             if(selectedPlatform == 0){
-                 var text = "<br><br><div style='text-align: center; font-size: 20px;'>Tweets tagged with: " +
+                 var text = "<br/><br/><div style='text-align: center; font-size: 20px;'>Tweets tagged with: " +
                 "<span style='background-color: #ff523f; border-radius: 5px; font-family: ";
                     text += "Lobster', cursive'; > #";
                     text += search;
-                    text += "</span></div><br><br>";
+                    text += "</span></div><br/><br/>";
 
             }
             else{
-                var text = "<br><br><div style='text-align: center; font-size: 20px;'>Tumblr Images with tag: " +
+                var text = "<br/><br/><div style='text-align: center; font-size: 20px;'>Tumblr Images with tag: " +
                 "<span style='background-color: #8cff77; border-radius: 5px; font-family: ";
                     text += "Lobster', cursive'; >";
                     text += search;
-                    text += "</span></div><br><br>";
+                    text += "</span></div><br/><br/>";
             }
 
             document.getElementById("tweet-content").innerHTML += text;
@@ -56,7 +55,7 @@ function searchTags(selectedPlatform)
                 html += data.images[i];
                 html += "' class='big' title='";
                 html += data.user[i] + " - " + data.text[i];
-                html += "'> <img style='border-radius: 30px; width: 300px; height: 300px; margin: 10px 10px 10px 10px'; class='tweet-images' src='";
+                html += "'> <img id='dummy1' style='border-radius: 30px; width: 300px; height: 300px; margin: 10px 10px 10px 10px'; class='tweet-images' src='";
                 html += data.images[i];
                 html += "' >";
                 document.getElementById("tweet-content").innerHTML += html;
@@ -90,5 +89,10 @@ function twitterOrTumblr()
     else{
         searchTags(1);
     }
+
+}
+
+function showWarning(){
+    toastr.info('Login/Register to use the web app!');
 
 }

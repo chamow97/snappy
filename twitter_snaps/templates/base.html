@@ -14,17 +14,23 @@
     <link rel="stylesheet" href="{% static 'plugins/lightbox/styles/ns-awesome-gallery.min.css' %}">
     <link rel="stylesheet" href="{% static 'plugins/simplelightbox/dist/simplelightbox.css' %}">
     {#    jQuery#}
-    <script type="text/javascript" src="{% static 'plugins/jquery.js' %}"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 {#    lightbox js#}
-    <script type="text/javascript" src="{% static 'plugins/simplelightbox/dist/simple-lightbox.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/lightbox/jquery.ns-awesome-gallery.js' %}"></script>
+    <script src="{% static 'plugins/simplelightbox/dist/simple-lightbox.js' %}"></script>
+    <script src="{% static 'plugins/lightbox/jquery.ns-awesome-gallery.js' %}"></script>
 {#    Bootstrap JS#}
-    <script type="text/javascript" src="{% static 'plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
-{#    local CSS#}
+    <script src="{% static 'plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+{#    nude JS #}
+    {#    local CSS#}
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
 {#    toastr#}
-    <script type="text/javascript" src="{% static 'plugins/toastr/build/toastr.min.js' %}" > </script>
-    <link rel="stylesheet" href="{% static 'plugins/toastr/build/toastr.css' %}">
+{#    <script src="{% static 'plugins/toastr/build/toastr.min.js' %}" > </script>#}
+{#    <link rel="stylesheet" href="{% static 'plugins/toastr/build/toastr.css' %}">#}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" > </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 {#    lightbox#}
 
 </head>
@@ -54,13 +60,14 @@ toastr.options = {
         </div>
         <div class="collapse navbar-collapse" id="navBar">
             <ul class="nav navbar-nav" id="hello">
-               <li><button class="btn btn-default nav-button"><a href="../register">Register</a></button></li>
-               <li><button class="btn btn-default nav-button login-btn"><a href="../login_user">Login</a></button></li>
-               <li><button class="btn btn-default nav-button logout-btn"><a href="../logout_user">Logout</a></button></li>
+               <li><a href="../register"><button class="btn btn-default nav-button">Register</button></a></li>
+               <li><a href="../login_user"><button class="btn btn-default nav-button login-btn">Login</button></a></li>
+               <li><a href="../logout_user"><button class="btn btn-default nav-button logout-btn">Logout</button></a></li>
             </ul>
         </div>
     </div>
 </nav>
+<br>
 <div class="row">
     <div class="col-md-offset-0 col-sm-offset-0 col-lg-offset-0 col-xs-offset-0" id = "heading">
         Snappy!
@@ -88,4 +95,11 @@ toastr.options = {
 {% endblock %}
 </body>
 <script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+{% if not request.user.is_active %}
+    <script>
+    if(document.querySelector(".search-bar") != null){
+        document.querySelector(".search-bar").addEventListener('click', showWarning);
+    }
+    </script>
+{% endif %}
 </html>
