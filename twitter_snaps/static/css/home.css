@@ -69,6 +69,19 @@ body{
     color: #ffffff;
 }
 
+.everything-btn{
+    border-style: solid;
+    border-color: #00ff00;
+    background-color: azure;
+    color: #000000  ;
+}
+.everything-btn:hover, .everything-btn.selected{
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: #00ff00;
+    color: #000000;
+}
+
 .twitter-btn:hover, .twitter-btn.selected{
     border-style: solid;
     border-color: #ffffff;

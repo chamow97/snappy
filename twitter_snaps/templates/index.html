@@ -6,8 +6,10 @@
 <div class="container-fluid">
 <div class="row">
     <div class="col col-xs-offset-2 col-sm-offset-4 col-lg-offset-5 col-md-offset-5">
-        <button class="btn select-btn twitter-btn selected" onclick="twitterOrTumblrToggle();">Twitter</button>
-        <button class="btn select-btn tumblr-btn" onclick="twitterOrTumblrToggle();">Tumblr</button>
+        <button id="twitter" class="btn select-btn twitter-btn selected" onclick="twitterOrTumblrToggle(this);">Twitter</button>
+        <button id="tumblr" class="btn select-btn tumblr-btn" onclick="twitterOrTumblrToggle(this);">Tumblr</button>
+        <button id="everything" class="btn select-btn everything-btn" onclick="twitterOrTumblrToggle(this);">Everything</button>
+
     </div>
 </div>
 <div class="row">

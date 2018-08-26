@@ -7,8 +7,11 @@ import json
 import requests
 import tweepy
 from django.views.generic import View
+import datetime
 
 # authentication for tweepy
+from twitter_snaps.models import user_search
+
 consumer_key = 'edvGYBKwCf5LzHVVY3IvVJgmM'
 consumer_secret_key = 'X5uKW5wiAbCW9pjqe0ublMBJ5O2PYUeeWqeUbkr17TQNP0KYrL'
 access_token = '342784431-eKqhjwlXEBHwcLP8sOxAdl8JjMYiroZs7mcwGBip'
@@ -74,9 +77,23 @@ def searchTags(request):
         search = "#" + search
         tweets = twitter_feed(request, search)
         return HttpResponse(tweets)
-    else:
+    elif selected_platform == 1:
         tumblr = tumblr_tags(request, search)
         return HttpResponse(tumblr)
+    else:
+        return HttpResponse()
+
+@csrf_exempt
+def saveTerms(request):
+    search = request.POST.get("search")
+    selected_platform = int(request.POST.get("selectedPlatform"))
+    current_date_time = datetime.datetime.now()
+    try:
+        term = user_search.objects.get(search_term=search, user_name=request.user.username, platform=selected_platform)
+    except:
+        term = user_search(search_term=search, platform=selected_platform, time=current_date_time, user_name=request.user.username)
+        term.save()
+    return HttpResponse()
 
 def index(request):
     return render(request, 'index.html')

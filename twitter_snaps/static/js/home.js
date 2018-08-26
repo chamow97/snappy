@@ -49,8 +49,7 @@ function searchTags(selectedPlatform)
 
             document.getElementById("tweet-content").innerHTML += text;
 
-            for(var i = 0; i < data["images"].length; i++)
-            {
+            for(var i = 0; i < data["images"].length; i++) {
                 var html = "<a href='";
                 html += data.images[i];
                 html += "' class='big' title='";
@@ -59,8 +58,20 @@ function searchTags(selectedPlatform)
                 html += data.images[i];
                 html += "' >";
                 document.getElementById("tweet-content").innerHTML += html;
-                gallery.push({'name': data.user[i], 'url':data.images[i], 'description':data.text[i]});
+                gallery.push({'name': data.user[i], 'url': data.images[i], 'description': data.text[i]});
             }
+            $.ajax({
+                data: {'search':search, 'selectedPlatform':selectedPlatform },
+                url: '/saveTerms',
+                type: 'POST',
+                success: function () {
+                    console.log("Success");
+                },
+                error: function () {
+                    console.log("Error");
+                }
+
+            });
             $(".loader").hide();
             document.getElementById("tweet-content").innerHTML += oldContent;
             var gallery = $('#tweet-content a').simpleLightbox();
@@ -75,24 +86,31 @@ function searchTags(selectedPlatform)
     });
 }
 
-function twitterOrTumblrToggle() {
-    $(".twitter-btn").toggleClass("selected");
-    $(".tumblr-btn").toggleClass("selected");
+function twitterOrTumblrToggle(details) {
+    var nodeId = details.id;
+    $("#twitter").hasClass("selected") ? $("#twitter").removeClass("selected") : "";
+    $("#tumblr").hasClass("selected") ? $("#tumblr").removeClass("selected") : "";
+    $("#everything").hasClass("selected") ? $("#everything").removeClass("selected") : "";
+    $("#" + nodeId).addClass("selected");
 }
 
 function twitterOrTumblr()
 {
     var isTwitterChecked = $(".twitter-btn").hasClass("selected");
+    var isTumblrChecked = $(".tumblr-btn").hasClass("selected");
     if(isTwitterChecked === true){
         searchTags(0);
     }
-    else{
+    else if(isTumblrChecked == true) {
         searchTags(1);
     }
+    else {
+        searchTags(2);
+    }
+
 
 }
 
 function showWarning(){
     toastr.info('Login/Register to use the web app!');
-
 }
