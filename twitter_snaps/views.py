@@ -10,6 +10,15 @@ from django.views.generic import View
 import datetime
 import threading
 from threading import Thread
+import nude
+from nude import Nude
+import urllib.request
+
+
+def is_nsfw(request, url):
+    urllib.request.urlretrieve(
+        url, "test.jpg")
+    return nude.is_nude('test.jpg')
 
 # authentication for tweepy
 from twitter_snaps.models import user_search
