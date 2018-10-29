@@ -8,6 +8,8 @@ import requests
 import tweepy
 from django.views.generic import View
 import datetime
+import threading
+from threading import Thread
 
 # authentication for tweepy
 from twitter_snaps.models import user_search
@@ -18,6 +20,21 @@ access_token = '342784431-eKqhjwlXEBHwcLP8sOxAdl8JjMYiroZs7mcwGBip'
 secret_access_token = 'pnYADssIJrlafbH1hH2PgpkKoK5YotBcKkmt30dyLcY2X'
 
 
+class ThreadWithReturnValue(Thread):
+    def __init__(self, group=None, target=None, name=None, args=(), kwargs=None, *, daemon=None):
+        Thread.__init__(self, group, target, name, args, kwargs, daemon=daemon)
+
+        self._return = None
+
+    def run(self):
+        if self._target is not None:
+            self._return = self._target(*self._args, **self._kwargs)
+
+    def join(self):
+        Thread.join(self)
+        return self._return
+
+
 def twitter_feed(request, search):
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret_key)
     auth.set_access_token(access_token, secret_access_token)
@@ -26,10 +43,10 @@ def twitter_feed(request, search):
     images = []
     user = []
     for tweet in tweepy.Cursor(api.search,
-                                q=str(search + " -filter:retweets"),
-                                lang="en",
-                                count=10,
-                                include_entities=True).items(150):
+                               q=str(search + " -filter:retweets"),
+                               lang="en",
+                               count=10,
+                               include_entities=True).items(150):
         if 'media' in tweet.entities:
             for image in tweet.entities['media']:
                 img_data = requests.get(image['media_url']).content
@@ -38,12 +55,9 @@ def twitter_feed(request, search):
                 images.append(image['media_url'])
                 tweets.append(tweet.text)
                 user.append(tweet.user.name)
-    ans = json.dumps({
-        'images':images,
-        'text': tweets,
-        'user': user
-    })
-    return HttpResponse(ans, content_type='application/json')
+    ans_list = [images, tweets, user]
+    return ans_list
+
 
 def tumblr_tags(request, search):
     api_key = 'IRb0id61fySh2utB0nCBPjJZIDgnBUfvTCigcbGRBRgSBrC6Dd'
@@ -62,12 +76,10 @@ def tumblr_tags(request, search):
 
         except:
             print("")
-    ans = json.dumps({
-        'images': images,
-        'text': slug,
-        'user': blog
-    })
-    return HttpResponse(ans, content_type='application/json')
+
+    ans_list = [images, slug, blog]
+    return ans_list
+
 
 @csrf_exempt
 def searchTags(request):
@@ -76,12 +88,37 @@ def searchTags(request):
     if selected_platform == 0:
         search = "#" + search
         tweets = twitter_feed(request, search)
-        return HttpResponse(tweets)
+        ans = json.dumps({
+            'images': tweets[0],
+            'text': tweets[1],
+            'user': tweets[2]
+        })
+        return HttpResponse(ans)
     elif selected_platform == 1:
         tumblr = tumblr_tags(request, search)
-        return HttpResponse(tumblr)
+        ans = json.dumps({
+            'images': tumblr[0],
+            'text': tumblr[1],
+            'user': tumblr[2]
+        })
+        return HttpResponse(ans)
     else:
-        return HttpResponse()
+        first_thread = ThreadWithReturnValue(target=twitter_feed, args=(request, "#" + search))
+        second_thread = ThreadWithReturnValue(target=tumblr_tags, args=(request, search))
+        first_thread.start()
+        second_thread.start()
+        tweets = first_thread.join()
+        tumblr = second_thread.join()
+        tweets[0].extend(tumblr[0])
+        tweets[1].extend(tumblr[1])
+        tweets[2].extend(tumblr[2])
+        ans = json.dumps({
+            'images': tweets[0],
+            'text': tweets[1],
+            'user': tweets[2]
+        })
+        return HttpResponse(ans)
+
 
 @csrf_exempt
 def saveTerms(request):
@@ -91,12 +128,15 @@ def saveTerms(request):
     try:
         term = user_search.objects.get(search_term=search, user_name=request.user.username, platform=selected_platform)
     except:
-        term = user_search(search_term=search, platform=selected_platform, time=current_date_time, user_name=request.user.username)
+        term = user_search(search_term=search, platform=selected_platform, time=current_date_time,
+                           user_name=request.user.username)
         term.save()
     return HttpResponse()
 
+
 def index(request):
     return render(request, 'index.html')
+
 
 def login_user(request):
     if not request.user.is_authenticated:
@@ -111,7 +151,7 @@ def login_user(request):
                     return redirect('/')
                 else:
                     return render(request, 'login_user.html',
-                                  {'error_message' : 'Your account has been disabled!'})
+                                  {'error_message': 'Your account has been disabled!'})
             else:
                 return render(request, 'login_user.html',
                               {'error_message': 'Incorrect Username / Password!'})
@@ -128,15 +168,13 @@ def logout_user(request):
     return redirect('/')
 
 
-
-
 class UserFormView(View):
     form_class = UserForm
     template_name = 'registration_form.html'
 
     def get(self, request):
         form = self.form_class(None)
-        return render(request, self.template_name, {'form':form})
+        return render(request, self.template_name, {'form': form})
 
     def post(self, request):
         form = self.form_class(request.POST)
@@ -154,8 +192,4 @@ class UserFormView(View):
                     login(request, user)
                     return redirect('/')
 
-        return render(request, self.template_name, {'form':form})
-
-
-
-
+        return render(request, self.template_name, {'form': form})
